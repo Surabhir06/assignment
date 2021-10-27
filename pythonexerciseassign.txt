@@ -1,0 +1,76 @@
+#question 1
+
+x=float(input("please enter the number x:"))
+y=float(input("please enter the number y:"))
+z=float(input("please enter the number z:"))
+print(x)
+print(y)
+print(z)
+if (x>y) and (x>z):
+    print("x is the bigger number",x)
+elif (y>x) and (y>z):
+    print("y is the bigger number",y)
+else:
+    print(" z is the bigger number",z)
+
+#question3
+
+name=input("enter your name:")
+age=int(input("enter your age:"))
+x=(100-age)+2021
+print("the user will turn 100 years old in:",x)
+
+#question6
+while True:
+    choice = input("Do wanna play a game of Rock-paper-scissor? Y/N\n")
+    if choice == 'Y':
+        player1=input("Player 1, Enter Your Choice rock/paper/scissor:")
+        player2 = input("Player 2, Enter Your Choice rock/paper/scissor:")
+        if player1 == player2:
+            print("Its a tie!!! try again")
+
+        elif player1 == 'rock':
+            if player2 == 'scissors':
+                print("Player 1 wins!!!")
+            else:
+                print("Player 2 wins!!!")
+        elif player1 == 'scissors':
+            if player2 == 'paper':
+                print("Player 1 wins!!!")
+            else:
+                print("Player 2 wins!!!")
+        elif player1 == 'paper':
+            if player2 == 'rock':
+                print("Player1 wins!!!")
+            else:
+                print("Player2 wins!!!")
+    else:
+        print("Run again to play!!")
+        break
+
+
+#question2 using function
+
+num1=int(input("Enter the first number: "))
+num2=int(input("Enter the second number: "))
+num3=int(input("Enter the Third number: "))
+def findBiggest():
+     if(num1>num2) and (num1>num2):
+         largest=num1
+     elif(num2>num1) and (num2>num3):
+         largest=num2
+     else:
+         largest=num3
+     print("Largest number is",largest)
+findBiggest()
+
+#question3 using function
+
+name=input("enter your name")
+age=int(input("enter your age"))
+def find_age():
+    Y=100-age
+    X=2021+Y
+    print("you will be 100 years old on:",X)
+    return
+print(find_age())
